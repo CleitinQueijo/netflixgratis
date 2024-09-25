@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 0%;
+					--foreground: 0 0% 0%;
+					--card: 0 0% 0%;
+					--card-foreground: 0 0% 0%;
+					--popover: 0 0% 0%;
+					--popover-foreground: 0 0% 0%;
+					--primary: 0 0% 0%;
+					--primary-foreground: 0 0% 0%;
+					--secondary: 180 100% 80%;
+					--secondary-foreground: 0 0% 0%;
+					--muted: 180 100% 80%;
+					--muted-foreground: 0 0% 0%;
+					--accent: 180 100% 80%;
+					--accent-foreground: 0 0% 0%;
+					--destructive: 0 84.2% 60.2%;
+					--destructive-foreground: 0 0% 98%;
+					--border: 240 5.9% 90%;
+					--input: 240 5.9% 90%;
+					--ring: 240 5.9% 10%;
+					--radius: 0.5rem;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-background text-primary-foreground dark:bg-primary dark:text-primary-foreground min-h-screen flex flex-col items-center justify-center">
+    <header class="p-4 w-full bg-primary dark:bg-background shadow-lg">
+        <h1 class="text-4xl font-bold text-accent dark:text-primary">Netflix Gratis</h1>
+    </header>
+    <main class="flex-1 p-4 w-full max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div class="p-6 bg-card dark:bg-primary-foreground rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <h2 class="text-2xl font-semibold mb-2 text-accent dark:text-primary">Homem Spider</h2>
+            <p class="text-sm text-muted-foreground dark:text-muted mb-4">Descrição do Homem Spider</p>
+            <img src="https://miro.medium.com/v2/resize:fit:1400/1*5KBP21kd20GSTTa8Psb9bg.jpeg" alt="Homem Spider" class="w-full h-48 object-cover rounded-lg mb-4">
+            <a href="https://youtube.com/shorts/o_xt4-gtY5E?si=NAAgfAHd6bFjMYz-" class="text-accent hover:underline dark:text-primary">Ver Detalhes</a>
+        </div>
+        <div class="p-6 bg-card dark:bg-primary-foreground rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <h2 class="text-2xl font-semibold mb-2 text-accent dark:text-primary">Vingadores</h2>
+            <p class="text-sm text-muted-foreground dark:text-muted mb-4">Descrição dos Vingadores</p>
+            <img src="https://ogimg.infoglobo.com.br/politica/22077455-31d-ac9/FT1086A/760/liga-da-justica.jpg" alt="Vingadores" class="w-full h-48 object-cover rounded-lg mb-4">
+            <a href="https://youtu.be/8Pc0AEbfnBM?si=SZb-UZ2KoU6B5UCp" class="text-accent hover:underline dark:text-primary">Ver Detalhes</a>
+        </div>
+        <div class="p-6 bg-card dark:bg-primary-foreground rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <h2 class="text-2xl font-semibold mb-2 text-accent dark:text-primary">Homem de Lata</h2>
+            <p class="text-sm text-muted-foreground dark:text-muted mb-4">Descrição do Homem de Lata</p>
+            <img src="https://p15-kimg.kwai.net/kimg/EKzM1y8qmQEKAnMzEg1waG90by1vdmVyc2VhGoMBdXBpYy8yMDIyLzAzLzIxLzA4L0JNakF5TWpBek1qRXdPRE00TURoZk1UVXdNREF3TVRBek56VTVOREl6WHpFMU1EQTJNRFkwTWpnMU5EVTNPRjh5WHpNPV9vdXVfQjYyMGYwZjY2YjQ0NjQ2ZGJhZTI2MTAwNDEyZDg2NDc1LndlYnA.webp" alt="Homem de Lata" class="w-full h-48 object-cover rounded-lg mb-4">
+            <a href="https://youtu.be/u9xYjaMbaQg?si=okuSgKMtrb24vXN1" class="text-accent hover:underline dark:text-primary">Ver Detalhes</a>
+        </div>
+    </main>
+    <footer class="p-4 w-full bg-primary dark:bg-background shadow-lg">
+        <p class="text-center text-sm text-primary-foreground dark:text-primary">&copy; 2023 Netflix Gratis. Todos os direitos reservados.</p>
+    </footer>
+</div>
+
+  </body>
+</html>
